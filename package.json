@@ -1,6 +1,6 @@
 {
   "name": "codechalk",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Souler Ou(ou@souler.cc)",
   "description": "⚙ A simple util to help you quickly highlight your code that can be output to console",
   "main": "dist/index.common.js",
