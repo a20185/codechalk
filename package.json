@@ -1,0 +1,64 @@
+{
+  "name": "codechalk",
+  "version": "0.0.1",
+  "author": "Souler Ou(ou@souler.cc)",
+  "description": "⚙ A simple util to help you quickly highlight your code that can be output to console",
+  "main": "dist/index.common.js",
+  "module": "dist/index.esm.js",
+  "repository": {
+    "url": "https://github.com/a20185/codechalk",
+    "type": "git"
+  },
+  "scripts": {
+    "test": "echo 'No test!'",
+    "build": "rm -rf ./dist && rollup -c rollup.config.js",
+    "build:watch": "rollup -c rollup.config.js -w"
+  },
+  "types": "index.d.ts",
+  "files": [
+    "README.md",
+    "package.json",
+    "assets",
+    "index.d.ts",
+    "dist"
+  ],
+  "keywords": [
+    "chalk",
+    "highlight",
+    "node highlight",
+    "code highlight",
+    "codechalk",
+    "highlighter",
+    "console highligter",
+    "highlight code in console"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "3.0.0",
+    "core-js": "^3.8.0",
+    "merge": "^2.1.1",
+    "semver": "7.0.0",
+    "shiki": "^0.9.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "@rollup/plugin-babel": "^5.1.0",
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-replace": "^2.3.3",
+    "@rollup/plugin-typescript": "^2.0.0",
+    "@types/node": "^14.14.10",
+    "@types/semver": "6.2.2",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "rollup": "^2.23.0",
+    "rollup-plugin-dts": "^2.0.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2"
+  },
+  "config": {
+    "changelog": "支持 detachedHead、输入校验、Stashing 优化、Types 完善",
+    "enchangelog": "Support DetachedHead、InputValidation、Stashing Optimizing、Types Completing"
+  }
+}
