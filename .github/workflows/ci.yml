@@ -1,12 +1,12 @@
-name: NPM Publish
+name: CI
 
 on:
   push:
-    tags:
-      - v*
+    branches:
+      - main
 
 jobs:
-  publish:
+  ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -15,7 +15,3 @@ jobs:
           node-version: 12
       - run: yarn install --frozen-lockfile
       - run: yarn test
-      - run: yarn build
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
